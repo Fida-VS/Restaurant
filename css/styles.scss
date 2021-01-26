@@ -71,9 +71,10 @@ body {
             font-size: 12px;
             line-height: 20px;
             cursor: pointer;
+            z-index: 1001;
 
             &:hover {
-                background-color: #e9cb30 !important;
+                background-color: #efd54d !important;
             }
         }
 
@@ -85,6 +86,117 @@ body {
             height: 60px;
             border-radius: 50%;
             border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .big-title_color_black {
+            color: #000;
+        }
+
+        .big-title_size_little-title {
+            font-size: 36px;
+            line-height: 48px;
+            height: 63px;
+            width: 270px;
+            margin-top: 35px;
+            margin-left: 47px;
+            padding-top: 3px;
+        }
+
+        .big-title__line_size_little {
+            z-index: 1000;
+            width: 58px;
+            border: 2.5px solid $accent;
+            margin-top: 9px;
+        }
+
+        .about {
+            display: flex;
+            height: 675px;
+
+            .about-picture {
+                width: 600px;
+                height: 475px;
+            }
+
+        }
+
+        .about-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 680px;
+                height: 475px;
+                padding-top: 92px;
+                padding-left: 46px;
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+    
+                .about-text__item {
+                    margin-top: 12px;
+    
+                    .about-text__subtitle {
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 28px;
+                        padding: 0px 40px 0px 40px;
+                        margin-left: -6px;
+                    }
+        
+                    .about-text__text {
+                        font-size: 14px;
+                        line-height: 24px;
+                        padding: 18px 40px 18px 40px;
+                        margin-left: -3px;
+                    }
+                }
+            }
+
+        .about-picture__picture {
+            width: 578px;
+            height: 578px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .about-picture__picture_position_about {
+            margin-top: 50px;
+            margin-left: -15px;
+        }
+
+        .about-picture__picture_position_team {
+            margin-top: -53px;
+            margin-left: 140px;
+        }
+
+        .about-picture__square {
+            position: absolute;
+            width: 210px;
+            height: 210px;
+            border: 20px solid $accent;
+            border-radius: 5px;
+            z-index: 1003;
+        }
+
+        .about-picture__square_position_right {
+            margin-top: -414px;
+            margin-left: 386px;
+        }
+
+        .about-picture__square_position_left {
+            margin-top: -414px;
+            margin-left: -86px;
+        }
+
+        .about-text_color_black {
+            color: #000;
+        }
+
+        .about-text_color_white {
+            color: #fff;
         }
 
         //Header
@@ -131,6 +243,7 @@ body {
                 }
 
                 a {
+                    z-index: 1001;
                     cursor: pointer;
 
                     &:hover {
@@ -331,6 +444,26 @@ body {
                 .content-block__item3 {
                     border-left: 1px solid rgba(255, 255, 255, 0.2);
                 }
+            }
+        }
+
+                          //Team
+
+        .team {
+            height: 675px;
+            background: url(../img/team-bg.png) no-repeat;
+            background-size: contain;
+
+            .team__item1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+                height: 100px;
+            }
+
+            .team__item2 {
+                display: flex;
             }
         }
 
