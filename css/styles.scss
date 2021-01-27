@@ -127,29 +127,54 @@ body {
                 align-items: center;
                 width: 680px;
                 height: 475px;
-                padding-top: 92px;
-                padding-left: 46px;
                 font-family: 'Open Sans', sans-serif;
                 text-align: center;
     
                 .about-text__item {
                     margin-top: 12px;
-    
-                    .about-text__subtitle {
-                        font-weight: bold;
-                        font-size: 18px;
-                        line-height: 28px;
-                        padding: 0px 40px 0px 40px;
-                        margin-left: -6px;
-                    }
-        
-                    .about-text__text {
-                        font-size: 14px;
-                        line-height: 24px;
-                        padding: 18px 40px 18px 40px;
-                        margin-left: -3px;
-                    }
                 }
+            }
+
+            .about-text_position_about {
+                padding-top: 92px;
+                padding-left: 46px;
+            }
+
+            .about-text_position_team {
+                margin-top: -12px;
+                margin-left: -40px;
+            }
+
+            .about-text__subtitle {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .about-text__subtitle_position_about {
+                padding: 0px 40px 0px 40px;
+                margin-left: -6px;
+            }
+
+            .about-text__subtitle_position_team {
+                padding: 0px 38px 0px 38px;
+                margin-left: 36px;
+                margin-top: -2px;
+            }
+
+            .about-text__text {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .about-text__text_position_about {
+                padding: 18px 40px 18px 40px;
+                margin-left: -3px;
+            }
+
+            .about-text__text_position_team {
+                padding: 18px 35px 18px 35px;
+                margin-left: 36px;
             }
 
         .about-picture__picture {
@@ -168,8 +193,8 @@ body {
         }
 
         .about-picture__picture_position_team {
-            margin-top: -53px;
-            margin-left: 140px;
+            margin-top: -55px;
+            margin-left: 142px;
         }
 
         .about-picture__square {
@@ -188,7 +213,7 @@ body {
 
         .about-picture__square_position_left {
             margin-top: -414px;
-            margin-left: -86px;
+            margin-left: 82px;
         }
 
         .about-text_color_black {
