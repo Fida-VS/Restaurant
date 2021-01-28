@@ -78,6 +78,15 @@ body {
             }
         }
 
+        .buttons-box__button_color_yellow {
+            background-color: $accent;
+            border: 1px solid $accent;
+        }
+
+        .buttons-box__button_size_big {
+            width: 580px;
+        }
+
         .iconsBox__item {
             display: flex;
             justify-content: center;
@@ -180,6 +189,7 @@ body {
         .about-picture__picture {
             width: 578px;
             height: 578px;
+            z-index: 1000;
 
             img {
                 width: 100%;
@@ -195,6 +205,15 @@ body {
         .about-picture__picture_position_team {
             margin-top: -55px;
             margin-left: 142px;
+        }
+
+        .about-picture__picture_position_reg {
+            margin-top: 45px;
+            margin-left: -8px;
+        }
+
+        .imgTeam {
+            z-index: 900;
         }
 
         .about-picture__square {
@@ -222,6 +241,26 @@ body {
 
         .about-text_color_white {
             color: #fff;
+        }
+
+        .team2 {
+            display: flex;
+            height: 675px;
+            margin-top: -675px;
+
+            .team__item1{
+                width: 295px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .team__item2, .team__item3 {
+                width: 424px;
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .team__item4 {
+                width: 294px;
+            }
         }
 
         //Header
@@ -325,11 +364,6 @@ body {
 
                         .buttons-box__button_size_small {
                             width: 200px;
-                        }
-
-                        .buttons-box__button_color_yellow {
-                            background-color: $accent;
-                            border: 1px solid $accent;
                         }
 
                         .buttons-box__button_color_transparent {
@@ -475,6 +509,7 @@ body {
                           //Team
 
         .team {
+            z-index: 500;
             height: 675px;
             background: url(../img/team-bg.png) no-repeat;
             background-size: contain;
@@ -489,6 +524,61 @@ body {
 
             .team__item2 {
                 display: flex;
+            }
+        }
+
+        //Registration
+
+        .reg {
+            height: 675px;
+
+            .reg-item1 {
+                display: flex;
+
+                .bookTable {
+                    width: 620px;
+                    height: 353px;
+                    text-align: center;
+                    margin-top: 85px;
+                    margin-left: 110px;
+
+                    .big-title {
+                        margin-top: 70px;
+                        margin-left: 173px;
+                    }
+
+                    form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 15px;
+                        margin-left: 10px;
+
+                      input {
+                          margin: 0;
+                          width: 276px;
+                          height: 60px;
+                          background: #E5E5E5;
+                          border-radius: 5px;
+                          font-family: Open Sans;
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 14px;
+                          line-height: 19px;
+                          display: flex;
+                          align-items: center;
+                          text-indent: 20px;
+                          color: rgba(51, 51, 51, 0.5);
+                          margin-bottom: 10px;
+                          margin-right: 11.4px;
+                          margin-left: 0;
+                      }
+                    }
+                }
+            }
+
+            .reg-item2 {
+                height: 100px;
             }
         }
 
