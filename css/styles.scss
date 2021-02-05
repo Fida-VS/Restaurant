@@ -575,10 +575,32 @@ body {
                       }
                     }
                 }
+
+                .about-picture__square {
+                    width: 186px;
+                    height: 186px;
+                    margin-left: 406px;
+                    margin-top: -402px;
+                }
             }
 
             .reg-item2 {
                 height: 100px;
+                display: flex;
+                justify-content: center;
+
+                .working-hours {
+                    width: 600px;
+                    margin-left: -100px;
+                    margin-top: -20px;
+
+                    .working-hours__item {
+                        color:rgba(51, 51, 51, 0.5);
+                        font-weight: normal;
+                    }
+                }    
+
+                
             }
         }
 
